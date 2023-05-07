@@ -17,11 +17,43 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  background-color: #141924;
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+img{
+  margin: auto;
+}
+.loading{
+  position: absolute;
+  top: 65%;
+  left: 49%;
+}
+.loader{
+  color: green;
+}
+@media only screen and (max-width: 1400px) {
+  img {
+    margin-top: 5%;
+  }
+  .loading{
+    top: 50%;
+  }
+}
+/* @media only screen and (max-width: 1000px) {
+  img {
+    margin-top: 15%;
+  } */
+@media only screen and (max-width: 800px) {
+  img {
+    margin-top: 35%;
+  }
+  .loading{
+    top: 55%;
+  }
 }
